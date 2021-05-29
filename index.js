@@ -1,11 +1,8 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: false}));
-
 app.get('/number', (req, res) => {
-    res.send('Go to /number/:num to check if :num is odd or even');
+    res.send('Go to ''/number/:num'' to check if :num is odd or even');
 })
 
 app.get('/number/:num' , (req, res) => {
